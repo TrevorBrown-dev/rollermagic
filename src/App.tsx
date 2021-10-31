@@ -1,9 +1,9 @@
-import './styles/style.css'
+import "./styles/style.css";
+import { RollerMagic } from "./svg/RollerMagic";
 export const App: React.FC = () => {
-  return (
-    <div>
-      React-TS-SASS
-    </div>
-  );
-}
-
+    return (
+        <div style={{ background: "#000" }}>
+            <RollerMagic />
+        </div>
+    );
+};
