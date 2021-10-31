@@ -2,7 +2,9 @@
 Base settings inspired by Sakura CSS.
 https://github.com/oxalorg/sakura
 */
-
+svg {
+    width: 100%;
+}
 :root {
     --scrollbar-width: 50px;
 }
