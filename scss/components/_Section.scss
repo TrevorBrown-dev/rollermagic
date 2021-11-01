@@ -1,0 +1,9 @@
+.section {
+    padding: 5em 20em;
+    @media (max-width: $mq-laptop-l) {
+        padding: 5em 10em;
+    }
+    @media (max-width: $mq-mobile-l) {
+        padding: 5em 5em;
+    }
+}

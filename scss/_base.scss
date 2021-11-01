@@ -19,10 +19,6 @@ svg {
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
-    font-family: Montserrat, sans-serif;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: overlay;
 }
 label {
     cursor: pointer;
@@ -81,10 +77,6 @@ h5 {
 }
 h6 {
     font-size: 100%;
-}
-
-#root {
-    // font-size: 2.4rem;
 }
 
 .center-text {
@@ -165,12 +157,6 @@ $mq-laptop-l: 1440px;
     }
 }
 
-.page-main-container {
-    padding-top: 5vh;
-
-    .page-main {
-    }
-}
 .align-bottom {
     display: flex;
     align-content: flex-end;

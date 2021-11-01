@@ -1,6 +1,7 @@
 /* custom scrollbar */
 
 ::-webkit-scrollbar {
+    font-size: 80%;
     width: 0.8em;
     background-color: $color-off-dark;
 }
