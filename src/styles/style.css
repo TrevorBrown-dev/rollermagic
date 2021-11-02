@@ -44,12 +44,10 @@ p {
   text-indent: 1em;
   line-height: 1.3em;
   margin-bottom: 0.5em;
-  max-width: clamp(40ch, 50%, 75ch);
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
-  text-align: justify;
 }
 
 ul {

@@ -1,7 +1,9 @@
+import { BirthdayParties } from "../components/BirthdayParties";
 import { BuisnessAddress } from "../components/BuisnessAddress";
 import { Hours } from "../components/Hours";
 import { ParallaxDiv } from "../components/ParallaxDiv";
 import { Pricing } from "../components/Pricing";
+import { PrivateParties } from "../components/PrivateParties";
 import img from "../media/skating.webp";
 import { ResponsiveSVG } from "../svg/ResponsiveSVG";
 import { RollerMagic } from "../svg/RollerMagic";
@@ -39,6 +41,50 @@ export const Home: React.FC = () => {
                 />
                 <Pricing />
             </ParallaxDiv>
+            <section className="section lessons center-content">
+                <h2 style={{ textAlign: "center" }}>Skate Lessons</h2>
+                <p style={{ width: "80%" }}>
+                    Must be booked in advance! $50 for 45 minutes. Includes
+                    quads or in-lines. Safety gear and open sk8 session after
+                    lesson. Group lessons or individual-All ages. Call{" "}
+                    <a href="tel:+8452296666">(845) 229-6666</a> or contact{" "}
+                    <a href="mailto:hprollermagic@gmail.com">
+                        hprollermagic@gmail.com
+                    </a>
+                </p>
+            </section>
+            <section className="section parties center-content">
+                <div
+                    className="test"
+                    style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "center",
+                    }}
+                >
+                    <BirthdayParties style={{ marginBottom: "2em" }} />
+                    <div
+                        style={{
+                            minHeight: "40ch",
+                            borderRight: "2px dashed white",
+                            marginLeft: "2em",
+                            marginRight: "2.5em",
+                        }}
+                    ></div>
+                    <PrivateParties />
+                </div>
+                <div
+                    style={{
+                        fontSize: "80%",
+                        marginTop: "2em",
+                        width: "70%",
+                    }}
+                >
+                    A <em>Semi private area</em> is available for an additional
+                    $50 to either package and provides a more private space and
+                    option of bringing your own cake.
+                </div>
+            </section>
         </main>
     );
 };

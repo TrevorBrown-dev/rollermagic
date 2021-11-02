@@ -1,3 +1,5 @@
+import { LabeledContent } from "./LabeledContent";
+
 interface HoursProps
     extends React.DetailedHTMLProps<
         React.HTMLAttributes<HTMLElement>,
@@ -18,26 +20,7 @@ export const Hours: React.FC<HoursProps> = ({ days, hours, ...props }) => {
         >
             <h2 style={{ textAlign: "center" }}>Hours</h2>
             {days.map((d, i) => {
-                return (
-                    <div key={i}>
-                        <span
-                            className="left"
-                            style={{
-                                display: "inline-block",
-                                textAlign: "right",
-                                width: "10ch",
-                                marginRight: ".5em",
-                                fontWeight: "bold",
-                            }}
-                        >
-                            {d}:
-                        </span>
-                        <span
-                            className="right"
-                            dangerouslySetInnerHTML={{ __html: hours[i] }}
-                        ></span>
-                    </div>
-                );
+                return <LabeledContent label={d} content={hours[i]} />;
             })}
         </section>
     );
